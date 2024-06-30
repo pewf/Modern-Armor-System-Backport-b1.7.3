@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "masb",
+  "version": "${version}",
+
+  "name": "Modern Armor System Backport",
+  "description": "A simple mod that backports the modern armor system implemented in release 1.0.0 to Minecraft Beta",
+  "authors": [
+    "pewf"
+  ],
+
+  "license": "MIT",
+  "icon": "assets/masb/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "pewf.masb.fabric.MASB"
+    ]
+  },
+  "mixins": [
+    "masb.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3"
+  }
+}
