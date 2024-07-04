@@ -13,15 +13,18 @@ public class InventoryMixin {
     @Shadow
     public ItemInstance[] armor;
 
+    /*
+     * Replaces the calculations b1.7.3 uses for armor points with the modern one that simply adds up all the protection values
+     */
     @Overwrite
     public int getArmorValue() {
-        int n = 0;
+        int totalArmorValue = 0;
         for (int i = 0; i < this.armor.length; ++i) {
             if (this.armor[i] != null && this.armor[i].getItem() instanceof ArmorItem) {
-                int n1 = ((ArmorItem)this.armor[i].getItem()).protection;
-                n += n1;
+                int armorPieceValue = ((ArmorItem)this.armor[i].getItem()).protection;
+                totalArmorValue += armorPieceValue;
             }
         }
-        return n;
+        return totalArmorValue;
     }
 }

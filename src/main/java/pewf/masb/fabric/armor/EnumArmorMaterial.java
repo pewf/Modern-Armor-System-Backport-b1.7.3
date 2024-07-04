@@ -1,6 +1,5 @@
-package pewf.masb.fabric;
+package pewf.masb.fabric.armor;
 
-import net.minecraft.world.item.ArmorItem;
 import pewf.masb.fabric.mixin.ArmorItemAccessor;
 
 public enum EnumArmorMaterial {

@@ -6,8 +6,7 @@ import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import pewf.masb.fabric.EnumArmorMaterial;
-import pewf.masb.fabric.MASB;
+import pewf.masb.fabric.armor.EnumArmorMaterial;
 
 @Mixin(ArmorItem.class)
 public class ArmorItemMixin extends Item {
