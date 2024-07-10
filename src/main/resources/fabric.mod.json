@@ -13,11 +13,6 @@
   "icon": "assets/masb/icon.png",
 
   "environment": "*",
-  "entrypoints": {
-    "main": [
-      "pewf.masb.fabric.MASB"
-    ]
-  },
   "mixins": [
     "masb.mixins.json"
   ],
